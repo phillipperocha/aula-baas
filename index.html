@@ -1,0 +1,135 @@
+﻿<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rudá Nutri</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/rodape.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/principal.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+      <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+        <a class="navbar-brand" href="index.php"><img src="img/fitness-nutri.png" class="imagem-topo"> Rudá Nutricionista</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.php">Principal <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create-paciente.html">Pacientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Dietas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Sobre</a>
+            </li>
+          </ul>
+        </div>
+          <span class="pull-right"><a id="logout">Login</a></div>
+      </nav>
+
+      <!-- fim do menu -->
+
+        <div class="container">
+            <div class="principal">
+
+
+			<!-- BODY -->
+
+			<main>
+			<section class="container">
+		    <h2 id="titulo-form">Login</h2>
+			<ul id="mensagens-erro"></ul>
+		    <form id="form-adiciona">
+		        
+
+				<div id="bemvindo">
+                    <button id="login" class="btn btn-principal" onclick="chamaLogin()">Login com Google <i class="fa fa-google red"></i></button>
+                </div>
+		    </form>
+		</section>
+
+
+
+
+			
+		</main>
+
+		
+
+
+		        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <section id="footer">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-3 text-center text-white">
+    				<ul class="list-unstyled list-inline social text-center">
+                        <p class="h5">Contatos:</p>
+    					<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+    					<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+    					<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+    				</ul>
+    			</div>
+    			</hr>
+    		</div>
+    		<div class="row">
+    			<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+    				<p class="h6">Desenvolvido por <a class="text-green ml-2" href="#" target="_blank">Phillippe Rocha</a></p>
+    			</div>
+    			</hr>
+    		</div>
+    	</div>
+    </section>
+    <!-- ./Footer -->
+
+    <!-- JavaScripts -->
+
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"/></script>
+    <script type="text/javascript" src="assets/js/autocompletar.js"/></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript TESTE -->
+
+    
+
+	<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+
+    <script>
+		// Initialize Firebase
+		var config = {
+		apiKey: "AIzaSyCINRXIwyj-yskxSrHg3GsSBNM2AfII8Bw",
+		authDomain: "aula-baas.firebaseapp.com",
+		databaseURL: "https://aula-baas.firebaseio.com",
+		projectId: "aula-baas",
+		storageBucket: "aula-baas.appspot.com",
+		messagingSenderId: "539682927092"
+		};
+		firebase.initializeApp(config);
+	</script>
+
+
+<script type="text/javascript" src="assets/js2/firebase.js"/></script>
+
+	
+
+    <!-- fim dos JavasScripts -->
+
+
+</body>
+</html>
